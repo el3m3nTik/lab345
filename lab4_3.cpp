@@ -18,7 +18,7 @@ int main()
 
         for (int j = 0; j < ROW; j++) {
 
-            temp += matrix[i][j];
+            temp += matrix[j][i];
         }
         if (sum > temp) {
             sum = temp;
@@ -27,11 +27,11 @@ int main()
 
         temp = 0;
     }
-    for (int i = 0; i < COL; i++) {
+    for (int i = 0; i < ROW; i++) {
         matrix[i][index] *= 3;
     }
 
-    for (int i = 0; i < COL; i++) {
+    for (int i = 0; i < ROW; i++) {
         cout << matrix[i][index] << endl;
     }
 
