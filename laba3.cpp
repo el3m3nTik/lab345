@@ -20,9 +20,10 @@ int main()
 			if (min < minn)
 			{
 				minn = min;
+				count = i;
 			}
 			ymnoj = ymnoj * x;
-			count = i;
+			
 			
 		}
 	}
